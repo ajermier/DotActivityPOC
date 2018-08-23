@@ -21,6 +21,7 @@ var undoButton = document.getElementById("undo");
 cancelButton.addEventListener("click", function(event) {
   signaturePad.clear();
   dataStack = [];
+  signaturePad.on();
 });
 
 undoButton.addEventListener("click", function(event) {
